@@ -1,0 +1,48 @@
+.menu {
+  height: 100vh;
+  width: 200px;
+  background-color: cadetblue;
+  position: fixed;
+  top: 60px;
+  right: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.menuul {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottm {
+  margin-bottom: 20px;
+}
+
+.home {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    width: 100%;
+    height: auto;
+    top: 0;
+    bottom: 0;
+  }
+
+  .menuul {
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  .home {
+    font-size: 24px;
+  }
+}

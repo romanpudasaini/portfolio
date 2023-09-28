@@ -1,0 +1,93 @@
+/* 
+
+
+
+/* Default Styles for Large Screens */
+.portfolio {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+ul {
+  margin: 10px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.container {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  height: 200px;
+  width: 250px;
+  border-radius: 20px;
+  border-radius: 1px light green;
+  margin: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.h3 {
+  position: absolute;
+  font-size: 20px;
+  color: brown;
+}
+
+.img-fluid {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.img-fluid:hover {
+  color: brown;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+/* Media Queries for responsiveness */
+
+/* For screens smaller than 768px width */
+@media screen and (max-width: 768px) {
+  .portfolio {
+    text-align: center; /* Center align text */
+  }
+
+  h1 {
+    font-size: 40px; /* Reduce font size for smaller screens */
+  }
+
+  .container {
+    width: 90%; /* Adjust container width for smaller screens */
+  }
+
+  .item {
+    width: 100%; /* Full width for portfolio items on small screens */
+    max-width: 300px; /* Limit the max width of portfolio items */
+    height: auto; /* Allow portfolio items to vary in height based on content */
+    margin: 10px auto; /* Center portfolio items horizontally */
+  }
+
+  .h3 {
+    font-size: 18px; /* Reduce font size for smaller screens */
+  }
+}

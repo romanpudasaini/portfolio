@@ -1,0 +1,79 @@
+.contact {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cleft {
+  flex: 1;
+  overflow: hidden;
+  max-width: 50%;
+}
+
+.cimg {
+  height: 100%;
+  width: 100%;
+}
+
+.cright {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 50%;
+}
+
+.ch2 {
+  font-size: 30px;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  background-color: crimson;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.focus {
+  outline: none;
+}
+
+.cspan {
+  color: green;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+  }
+
+  .cleft,
+  .cright {
+    max-width: 100%;
+  }
+}

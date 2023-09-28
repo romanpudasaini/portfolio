@@ -1,0 +1,27 @@
+* {
+  font-family: "Roboto", sans-seri;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.App {
+  height: 100vh;
+
+  .section {
+    width: 100%;
+    height: calc(100vh - 50px);
+    background-color: darkgoldenrod;
+    position: relative;
+    top: 60px;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+
+    > * {
+      width: 100vw;
+      height: calc(100vh - 50px);
+      scroll-snap-align: start;
+    }
+  }
+}
